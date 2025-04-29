@@ -44,25 +44,27 @@ form {
   padding-top: 10px;
   padding-bottom: 25px;
   justify-content: space-between;
+  width: 100%;
 }
 
 .form-group-horizontal-control {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+  gap: 20px;
 }
 
 #state {
   display: flex;
-  width: fit-content;
-  padding-right: 40px;
+  width: 100%;
+  padding-right: 10px;
 }
 
 #city {
   display: flex;
-  width: fit-content;
-  padding-left: 40px;
+  width: 100%;
+  padding-left: 10px;
 }
 
 select {

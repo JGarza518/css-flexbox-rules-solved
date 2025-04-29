@@ -39,12 +39,14 @@ section {
 .header-content {
   display: flex;
   flex-direction: row;
+  gap: 50px;
 }
 
 .logo-search {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .logo {
@@ -53,7 +55,8 @@ section {
   font-size: 28px;
   font-weight: 900;
   font-family: "Caveat", sans-serif;
-  padding: 20px;
+  padding-right: 20px;
+  align-items: center;
 }
 
 .search-bar {
@@ -63,6 +66,8 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  align-items: center;
+  height: 50px;
 }
 
 .search-bar input {
@@ -83,6 +88,8 @@ section {
   display: flex;
   flex-flow: row wrap;
   padding-left: 60px;
+  justify-content: center;
+  gap: 25px;
 }
 
 .option {
@@ -90,6 +97,8 @@ section {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  flex-direction: column;
+  align-items: center;
 }
 
 .option i {
@@ -103,6 +112,7 @@ section {
   justify-content: center;
   background-color: #2b2d36;
   padding-top: 20px;
+  gap: 20px;
 }
 
 .category {
@@ -124,12 +134,13 @@ section {
   background-color: #d5ef9a;
   border: 1px solid #d5ef9a;
   color: #1f1f27;
+  display: flex;
 }
 
 .view-options {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  flex-direction: row;
+  gap: 30px;
 }
 
 i.fa-th-list,
@@ -138,6 +149,7 @@ i.fa-th {
   display: flex;
   justify-content: center;
   transform: rotate(180deg);
+  align-items: center;
 }
 
 .section-control {
@@ -153,6 +165,8 @@ i.fa-th {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .products {
@@ -210,12 +224,12 @@ i.fa-th {
 .grid.products {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
 .grid .product {
   width: 300px;
-  padding-bottom: 30px;
 }
 
 .grid .product-image-wrapper {
@@ -228,12 +242,19 @@ i.fa-th {
 
 .grid .product-info {
   text-align: center;
-  padding: 0 20px 30px;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  gap: 15px;
 }
 
 .grid .product-action {
+  padding-bottom: 30px;
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
 }
 
 /* LINE VIEW STYLES */
@@ -241,20 +262,23 @@ i.fa-th {
 .lines.products {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .lines .product {
-  padding: 20px;
   display: flex;
   flex-direction: row;
+  height: 230px;
 }
 
 .lines .product-image-wrapper {
   min-width: 300px;
-  height: 200px;
+  height: 230px;
   display: flex;
   justify-content: left;
+  align-items: center;
+  padding: 15px;
 }
 
 .lines .product-data {
@@ -265,13 +289,16 @@ i.fa-th {
 
 .lines .product-info {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  padding: 20px;
+  height: 160px;
+  justify-content: space-around;
 }
 
 .lines .product-action {
   display: flex;
-  justify-content: center;
+  align-items: baseline;
+  justify-content: flex-start;
 }
 
 /* LINES-ACTION VIEW */
@@ -279,35 +306,43 @@ i.fa-th {
 .lines-action.products {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .lines-action .product {
   display: flex;
   flex-direction: row;
+  height: 230px;
 }
 
 .lines-action .product-image-wrapper {
   min-width: 300px;
-  height: 200px;
+  height: 230px;
   display: flex;
   justify-content: flex-start;
+  padding: 15px;
 }
 
 .lines-action .product-data {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
 .lines-action .product-info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 200px;
+  gap: 30px;
 }
